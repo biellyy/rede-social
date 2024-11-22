@@ -5,8 +5,9 @@ async function vizualizrInformaçoesGlobais() {
   const dados = await res.json()
   const paragrafo = document.createElement('p')
   paragrafo.classList.add('graficos-container__texto')
-  paragrafo.innerHTML=`Você sabia que o mundo tem ${dados.total_pessoas_mundo} de pessoas e que aproximadamente ${total_pessoas_conectadas} estão conectadas em alguma rede social e passam em média
- ${dados.tempo_médio} horas conectadas.`
+  paragrafo.innerHTML=`Você sabia que o mundo tem ${dados.total_pessoas_mundo} de pessoas e que aproximadamente <span> ${total_pessoas_conectadas} <span/> estão conectadas em alguma rede social e pass
+  am em média <span>
+ ${dados.tempo_médio} </pan> horas conectadas.`
  console.log(paragrafo);
 
  const container = document.getElementById('graficos-container')
